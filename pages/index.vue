@@ -3,10 +3,10 @@
 </script>
 
 <template>
-  <div class="flex flex-col min-h-screen justify-center items-center px-6">
-    <div class="flex flex-row gap-20 items-center flex-wrap">
+  <div class="flex flex-col min-h-[calc(100vh-60px)] justify-center items-center px-6">
+    <div class="flex flex-row gap-4 md:gap-20 justify-center md:justify-normal items-center flex-wrap">
       <img :src="BrandImage" width="300" class="shadow-md rounded-2xl"></img>
-      <div class="flex flex-col gap-1">
+      <div class="flex flex-col gap-1 items-center md:items-start">
         <h1 class="font-extrabold text-3xl">
           Hi! I'm Miguel
         </h1>
