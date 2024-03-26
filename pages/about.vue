@@ -1,6 +1,4 @@
 <script setup>
-const markdown = "### yes"
-
 </script>
 
 <template>
