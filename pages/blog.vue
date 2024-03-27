@@ -1,7 +1,9 @@
 <script setup>
 const posts = await queryContent('blog').find();
 
-console.log(posts)
+useHead({
+  title: "Blog | miguelbuccat.me"
+});
 </script>
 
 <template>
@@ -12,7 +14,7 @@ console.log(posts)
   <div class="flex flex-col gap-2 justify-center items-center py-4 px-6">
     <RouterLink class="flex flex-col md:min-w-[400px] bg-slate-50 transition hover:scale-110 focus:scale-90 py-4 px-6 gap-1" v-for="post of posts" :to="post._path">
       <h1 class="text-3xl font-bold">{{ post.title }}</h1>
-      <p class="font-light">{{ post.excerpt }}</p>
+      <p class="font-light">{{ post.excerptString }}</p>
       <p class="mt-4">{{ post.date }}</p>
     </RouterLink>
   </div>

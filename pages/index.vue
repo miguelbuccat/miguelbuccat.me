@@ -1,5 +1,9 @@
 <script setup>
-  import BrandImage from '../assets/img/miguel.jpg';
+import BrandImage from '../assets/img/miguel.jpg';
+  
+useHead({
+  title: "Home | miguelbuccat.me"
+});
 </script>
 
 <template>

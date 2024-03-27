@@ -1,4 +1,7 @@
 <script setup>
+useHead({
+  title: "About me | miguelbuccat.me"
+});
 </script>
 
 <template>

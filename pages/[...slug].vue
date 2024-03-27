@@ -11,7 +11,7 @@
       </template>
       <template v-slot="{ doc }">
         <div class="flex flex-col items-center py-4 px-6">
-          <article class="prose md:w-[1500px] shadow-md rounded-md py-4 px-6">
+          <article class="prose shadow-md bg-slate-50 rounded-md py-4 px-6">
             <h1>{{ doc.title }}</h1>
             <p class="font-extralight">{{ doc.date }}</p>
             <ContentRenderer :value="doc" />
