@@ -13,6 +13,9 @@ const mobileMenu = ref(false);
         <RouterLink to="/blog" class="hover:text-slate-800 hidden md:block">Blog</RouterLink>
       </div>
       <div class="flex flex-row gap-6 items-center">
+        <a href="https://github.com/miguelbuccat">
+          <GithubIcon />
+        </a>
         <button class="block md:hidden" @click="() => mobileMenu = !mobileMenu">
           <ChevronDown v-if="!mobileMenu" />
           <ChevronUp v-else />
